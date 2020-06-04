@@ -4,7 +4,8 @@ module.exports = {
 
     DEFAULT_OPTIONS: {
         volume: 1.0,
-        scalingMode: 1
+        scalingMode: 1,
+        cancelableDialog: true
     },
 
     SCALING_MODE: {

@@ -43,7 +43,8 @@ VideoPlayer.play(
     "file:///android_asset/www/movie.mp4",
     {
         volume: 0.5,
-        scalingMode: VideoPlayer.SCALING_MODE.SCALE_TO_FIT_WITH_CROPPING
+        scalingMode: VideoPlayer.SCALING_MODE.SCALE_TO_FIT_WITH_CROPPING,
+        cancelableDialog: true
     },
     function () {
         console.log("video completed");
@@ -66,6 +67,8 @@ VideoPlayer.play(
     - `SCALE_TO_FIT_WITH_CROPPING`
 
     Refer to http://developer.android.com/reference/android/media/MediaPlayer.html#setVideoScalingMode(int) for more details.
+
+- `cancelableDialog`: (Optional) allows you to set the fullscreen Dialog cacelable or not incase to play complete video
 
 
 # Troubleshooting
