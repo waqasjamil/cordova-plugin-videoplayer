@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.moust.cordova.videoplayer"
-    version="1.0.1">
+    id="com.mwj.cordova.androidvideoplayer"
+    version="1.0.3">
 
     <name>Video Player</name>
     <description>Native Video Player Plugin</description>
@@ -11,19 +11,19 @@
     <repo>https://github.com/waqasjamil/cordova-plugin-videoplayer.git</repo>
     <issue>https://github.com/waqasjamil/cordova-plugin-videoplayer/issues</issue>
 
-    <js-module src="www/videoplayer.js" name="VideoPlayer">
-        <clobbers target="VideoPlayer" />
+    <js-module src="www/androidvideoplayer.js" name="AndroidVideoPlayer">
+        <clobbers target="AndroidVideoPlayer" />
     </js-module>
 
     <platform name="android">
 
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="VideoPlayer">
-                <param name="android-package" value="com.moust.cordova.videoplayer.VideoPlayer"/>
+            <feature name="AndroidVideoPlayer">
+                <param name="android-package" value="com.mwj.cordova.videoplayer.AndroidVideoPlayer"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/VideoPlayer.java" target-dir="src/com/moust/cordova/videoplayer" />
+        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="src/com/mwj/cordova/videoplayer" />
 
     </platform>
 

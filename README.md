@@ -9,7 +9,7 @@ A Cordova plugin that simply allows you to immediately play a video in fullscree
 This plugin use the Cordova CLI's plugin command. To install it to your application, simply execute the following (and replace variables).
 
 ```
-cordova plugin add cordova-plugin-video-player
+cordova plugin add cordova-plugin-android-video-player
 ```
 
 

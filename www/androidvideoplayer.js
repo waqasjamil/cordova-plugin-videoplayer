@@ -15,11 +15,11 @@ module.exports = {
 
     play: function (path, options, successCallback, errorCallback) {
         options = this.merge(this.DEFAULT_OPTIONS, options);
-        exec(successCallback, errorCallback, "VideoPlayer", "play", [path, options]);
+        exec(successCallback, errorCallback, "AndroidVideoPlayer", "play", [path, options]);
     },
 
     close: function (successCallback, errorCallback) {
-        exec(successCallback, errorCallback, "VideoPlayer", "close", []);
+        exec(successCallback, errorCallback, "AndroidVideoPlayer", "close", []);
     },
 
     merge: function () {

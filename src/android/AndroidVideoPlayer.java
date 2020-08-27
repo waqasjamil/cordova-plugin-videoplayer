@@ -1,4 +1,4 @@
-package com.moust.cordova.videoplayer;
+package com.mwj.cordova.videoplayer;
 
 import android.annotation.TargetApi;
 import android.app.Dialog;
@@ -29,9 +29,9 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class VideoPlayer extends CordovaPlugin implements OnCompletionListener, OnPreparedListener, OnErrorListener, OnDismissListener {
+public class AndroidVideoPlayer extends CordovaPlugin implements OnCompletionListener, OnPreparedListener, OnErrorListener, OnDismissListener {
 
-    protected static final String LOG_TAG = "VideoPlayer";
+    protected static final String LOG_TAG = "AndroidVideoPlayer";
 
     protected static final String ASSETS = "/android_asset/";
 
